@@ -1,0 +1,100 @@
+body {
+	margin: auto 0px;
+}
+
+.cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: gold; 
+	border-bottom: : 2px solid purple;
+	padding: 30px 20px	;
+	height: 25vh;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: purple;
+}
+
+.dropdown {
+	text-align: center;
+	cursor: pointer;
+	background-color: purple;
+	position: relative;
+}
+
+p {
+	text-align: center;
+	margin: 0px auto;
+	font-size: 1.3rem;
+	transition: transform 0.5s;
+	width: 300px;
+}
+
+.dropdown-content {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	background-color: purple;
+	width: 100%;
+	z-index: 1;
+	height: 10vh;
+	transition: visibility 0s, opacity 0.5s linear;
+
+}
+
+.dropdown-content a {
+	color: gold; 
+	text-decoration: none;
+	font-size: 1.3rem;
+
+}
+
+.dropdown-content button {
+	background-color: purple;
+	padding: 0px 150px;
+	border: 2px solid gold;
+	border-radius: 12px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+	visibility: visible;
+	opacity: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.dropdown:hover .arrow {
+	transform: rotate(-180deg);
+}
+
+.home_page {
+	height: 62.7vh;
+	padding-top: 10;
+	background-color: purple;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.home_page img {
+	height: 50vh;
+	width: 500px;
+}
+
+.home_page .quote {
+	background-color: gold;
+	border-radius: 12px;
+	width: 50%;
+	height: 50vh;
+}
+
+.home_page .quote p {
+	padding: 80px 0px;
+	font-size: 2rem;
+	width: 100%;
+}
